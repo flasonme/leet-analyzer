@@ -28,7 +28,7 @@
     "cli",
     "ai"
   ],
-  "author": "",
+  "author": "Flason Nguyen <xflasonnguyenx@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "@google/generative-ai": "^0.24.1",

@@ -1,7 +1,11 @@
 # Leet Analyzer
 
-[![npm version](https://badge.fury.io/js/leet-analyzer.svg)](https://badge.fury.io/js/leet-analyzer)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+<a href="https://www.npmjs.com/package/leet-analyzer">
+  <img src="https://img.shields.io/badge/npm-leet_analyzer-red" alt="npm">
+</a>
+<a href="https://opensource.org/licenses/MIT">
+  <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT">
+</a>
 
 An interactive CLI tool to analyze LeetCode solutions, determine time and space complexity, and export analysis into formatted Obsidian notes. Leet Analyzer leverages AI for intelligent insights (via Gemini API) and supports solutions in TypeScript, JavaScript, and Go.
 

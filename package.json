@@ -1,0 +1,52 @@
+{
+  "name": "leet-analyzer",
+  "version": "0.1.0",
+  "description": "Interactive CLI tool to analyze LeetCode solutions and export to Obsidian",
+  "main": "dist/index.js",
+  "bin": {
+    "leet-analyzer": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --ext .ts",
+    "prepare": "npm run build",
+    "example:ts": "npx ts-node examples/two-sum.ts",
+    "example:ts-optimized": "npx ts-node examples/two-sum-optimized.ts",
+    "example:go": "go run examples/two-sum.go",
+    "analyze:ts": "npx ts-node src/index.ts examples/two-sum.ts --my-solution",
+    "analyze:ts-optimized": "npx ts-node src/index.ts examples/two-sum-optimized.ts --solution-name=\"Two Pointer Approach\"",
+    "analyze:go": "npx ts-node src/index.ts examples/two-sum.go --solution-name=\"Go Implementation\""
+  },
+  "keywords": [
+    "leetcode",
+    "algorithm",
+    "complexity",
+    "obsidian",
+    "cli",
+    "ai"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@types/node": "^22.15.21",
+    "axios": "^1.9.0",
+    "chalk": "^4.1.2",
+    "commander": "^14.0.0",
+    "dotenv": "^16.4.1",
+    "fs-extra": "^11.3.0",
+    "inquirer": "^8.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/inquirer": "^9.0.8"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
